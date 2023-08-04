@@ -1,0 +1,9 @@
+﻿  thread_pool.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3416,35): error C2664: “Thread::Thread(Thread::ThreadFunc)”: 无法将参数 1 从“_Ty”转换为“Thread::ThreadFunc”
+          with
+          [
+              _Ty=std::_Binder<std::_Unforced,void (__thiscall ThreadPool::* )(int),const std::_Ph<1> &,ThreadPool *>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3416,56): message : 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+F:\VS2019\KR\C++\thread_pool\thread_pool\thread_pool\thread_pool.cpp(157,9): message : 参见“Thread::Thread”的声明
+F:\VS2019\KR\C++\thread_pool\thread_pool\thread_pool\thread_pool.cpp(78): message : 查看对正在编译的函数 模板 实例化“std::unique_ptr<Thread,std::default_delete<Thread>> std::make_unique<Thread,std::_Binder<std::_Unforced,void (__thiscall ThreadPool::* )(int),const std::_Ph<1> &,ThreadPool *>,0>(std::_Binder<std::_Unforced,void (__thiscall ThreadPool::* )(int),const std::_Ph<1> &,ThreadPool *> &&)”的引用

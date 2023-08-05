@@ -90,10 +90,9 @@ class Result {
 public:
 	Result(std::shared_ptr<Task> task, bool isValid = true);
 	~Result() = default;
-
-	void setVal(Any any);
-
 	Any get();
+	void setAnyVal(Any any);
+
 private:
 	Any any_;  // 存储任务的返回值
 	Semaphore sem_; // 线程通信信号
@@ -108,7 +107,7 @@ public:
 	~Task() = default;
 
 	void exec();
-	void setResult(Result* res);
+	void setResultThis(Result* res);
 	virtual Any run() = 0;
 
 private:
@@ -131,8 +130,8 @@ public:
 	int getId() const;
 private:
 	ThreadFunc func_;
-	static size_t generateId_;
-	size_t threadId_; //保存线程ID
+	static size_t generateNo_; // 生成的线程编号
+	size_t threadNo_; //保存线程编号
 };
 
 class ThreadPool {

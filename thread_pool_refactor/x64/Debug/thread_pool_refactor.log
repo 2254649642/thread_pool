@@ -1,0 +1,107 @@
+﻿  test_ main_refactor.cpp
+F:\VS2019\KR\C++\thread_pool\thread_pool\thread_pool_refactor\thread_pool_refactor.h(322,18): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+F:\VS2019\KR\C++\thread_pool\thread_pool\thread_pool_refactor\thread_pool_refactor.h(58,1): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+F:\VS2019\KR\C++\thread_pool\thread_pool\thread_pool_refactor\test_ main_refactor.cpp(31): message : 查看对正在编译的函数 模板 实例化“std::future<int> ThreadPool::submitTask<int(__cdecl &)(int,int),int,int>(Func,int &&,int &&)”的引用
+          with
+          [
+              Func=int (__cdecl &)(int,int)
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits(1595,67): warning C4244: “参数”: 从“_Ty1”转换到“int”，可能丢失数据
+          with
+          [
+              _Ty1=unsigned __int64
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\thread(51): message : 查看对正在编译的函数 模板 实例化“_Ret std::invoke<std::function<void (int)>,unsigned __int64,>(_Callable &&,_Ty1 &&) noexcept(false)”的引用
+          with
+          [
+              _Ret=void,
+              _Callable=std::function<void (int)>,
+              _Ty1=unsigned __int64
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\thread(61): message : 查看对正在编译的函数 模板 实例化“unsigned int std::thread::_Invoke<_Tuple,0,1>(void *) noexcept”的引用
+          with
+          [
+              _Tuple=_Tuple
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\thread(66): message : 查看对正在编译的函数 模板 实例化“unsigned int (__cdecl *std::thread::_Get_invoke<_Tuple,0,1>(std::integer_sequence<size_t,0,1>) noexcept)(void *) noexcept”的引用
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\thread(89): message : 查看对正在编译的函数 模板 实例化“void std::thread::_Start<Thread::ThreadFunc&,size_t&>(_Fn,size_t &)”的引用
+          with
+          [
+              _Fn=Thread::ThreadFunc &
+          ]
+F:\VS2019\KR\C++\thread_pool\thread_pool\thread_pool_refactor\thread_pool_refactor.h(315): message : 查看对正在编译的函数 模板 实例化“std::thread::thread<Thread::ThreadFunc&,size_t&,0>(_Fn,size_t &)”的引用
+          with
+          [
+              _Fn=Thread::ThreadFunc &
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility(193,48): warning C4267: “初始化”: 从“size_t”转换到“_Ty1”，可能丢失数据
+          with
+          [
+              _Ty1=const int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(707): message : 查看对正在编译的函数 模板 实例化“std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>::pair<size_t&,_Ty,0>(_Other1,_Other2 &&) noexcept”的引用
+          with
+          [
+              _Ty=std::unique_ptr<Thread,std::default_delete<Thread>>,
+              _Other1=size_t &,
+              _Other2=std::unique_ptr<Thread,std::default_delete<Thread>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(714): message : 查看对正在编译的函数 模板 实例化“std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>::pair<size_t&,_Ty,0>(_Other1,_Other2 &&) noexcept”的引用
+          with
+          [
+              _Ty=std::unique_ptr<Thread,std::default_delete<Thread>>,
+              _Other1=size_t &,
+              _Other2=std::unique_ptr<Thread,std::default_delete<Thread>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\list(589): message : 查看对正在编译的函数 模板 实例化“void std::_Default_allocator_traits<_Alloc>::construct<_Ty,size_t&,std::unique_ptr<Thread,std::default_delete<Thread>>>(_Alloc &,_Objty *const ,size_t &,std::unique_ptr<Thread,std::default_delete<Thread>> &&)”的引用
+          with
+          [
+              _Alloc=std::allocator<std::_List_node<std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>,std::_Default_allocator_traits<std::allocator<std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>>>::void_pointer>>,
+              _Ty=std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>,
+              _Objty=std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\list(591): message : 查看对正在编译的函数 模板 实例化“void std::_Default_allocator_traits<_Alloc>::construct<_Ty,size_t&,std::unique_ptr<Thread,std::default_delete<Thread>>>(_Alloc &,_Objty *const ,size_t &,std::unique_ptr<Thread,std::default_delete<Thread>> &&)”的引用
+          with
+          [
+              _Alloc=std::allocator<std::_List_node<std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>,std::_Default_allocator_traits<std::allocator<std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>>>::void_pointer>>,
+              _Ty=std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>,
+              _Objty=std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xhash(568): message : 查看对正在编译的函数 模板 实例化“std::_List_node_emplace_op2<std::allocator<std::_List_node<std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>::_List_node_emplace_op2<size_t&,_Ty>(_Alnode &,size_t &,_Ty &&)”的引用
+          with
+          [
+              _Alloc=std::allocator<std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>>,
+              _Ty=std::unique_ptr<Thread,std::default_delete<Thread>>,
+              _Alnode=std::allocator<std::_List_node<std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>,std::_Default_allocator_traits<std::allocator<std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>>>::void_pointer>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xhash(601): message : 查看对正在编译的函数 模板 实例化“std::_List_node_emplace_op2<std::allocator<std::_List_node<std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>::_List_node_emplace_op2<size_t&,_Ty>(_Alnode &,size_t &,_Ty &&)”的引用
+          with
+          [
+              _Alloc=std::allocator<std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>>,
+              _Ty=std::unique_ptr<Thread,std::default_delete<Thread>>,
+              _Alnode=std::allocator<std::_List_node<std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>,std::_Default_allocator_traits<std::allocator<std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>>>::void_pointer>>
+          ]
+F:\VS2019\KR\C++\thread_pool\thread_pool\thread_pool_refactor\thread_pool_refactor.h(58): message : 查看对正在编译的函数 模板 实例化“std::pair<std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,bool> std::_Hash<std::_Umap_traits<_Kty,std::unique_ptr<Thread,std::default_delete<Thread>>,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::emplace<size_t&,std::unique_ptr<Thread,std::default_delete<Thread>>>(size_t &,std::unique_ptr<Thread,std::default_delete<Thread>> &&)”的引用
+          with
+          [
+              _Ty=std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>,
+              _Kty=int,
+              _Hasher=std::hash<int>,
+              _Keyeq=std::equal_to<int>,
+              _Alloc=std::allocator<std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>>
+          ]
+F:\VS2019\KR\C++\thread_pool\thread_pool\thread_pool_refactor\thread_pool_refactor.h(97): message : 查看对正在编译的函数 模板 实例化“std::pair<std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,bool> std::_Hash<std::_Umap_traits<_Kty,std::unique_ptr<Thread,std::default_delete<Thread>>,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::emplace<size_t&,std::unique_ptr<Thread,std::default_delete<Thread>>>(size_t &,std::unique_ptr<Thread,std::default_delete<Thread>> &&)”的引用
+          with
+          [
+              _Ty=std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>,
+              _Kty=int,
+              _Hasher=std::hash<int>,
+              _Keyeq=std::equal_to<int>,
+              _Alloc=std::allocator<std::pair<const int,std::unique_ptr<Thread,std::default_delete<Thread>>>>
+          ]
+F:\VS2019\KR\C++\thread_pool\thread_pool\thread_pool_refactor\test_ main_refactor.cpp(31): message : 查看对正在编译的函数 模板 实例化“std::future<int> ThreadPool::submitTask<int(__cdecl &)(int,int),int,int>(Func,int &&,int &&)”的引用
+          with
+          [
+              Func=int (__cdecl &)(int,int)
+          ]
+  thread_pool_refactor.vcxproj -> F:\VS2019\KR\C++\thread_pool\thread_pool\x64\Debug\thread_pool_refactor.exe

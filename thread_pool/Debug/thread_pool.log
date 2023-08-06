@@ -1,4 +1,4 @@
 ﻿  test_main.cpp
-c1xx : fatal error C1083: 无法打开源文件: “test_main.cpp”: No such file or directory
   thread_pool.cpp
-  正在运行 C/C++ 代码分析...
+  正在生成代码...
+  thread_pool.vcxproj -> F:\VS2019\KR\C++\thread_pool\thread_pool\Debug\thread_pool.exe

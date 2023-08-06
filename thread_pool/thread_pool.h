@@ -93,8 +93,9 @@ class Result {
 public:
 	Result(std::shared_ptr<Task> task, bool isValid = true);
 	~Result() = default;
-	Any get();
-	void setAnyVal(Any any);
+
+	Any get(); //给用户调用 获取返回值
+	void setAnyVal(Any any); //保存task的返回值
 
 private:
 	Any any_;  // 存储任务的返回值

@@ -55,6 +55,9 @@ private:
 };
 
 // 信号量类
+// 单纯使用mutex可以实现代码块互斥执行
+// 使用mutex + condition_variable可以实现线程通信(1对1，同时一个生产者生产，同时一个消费者消费)生产者-消费者模型
+// 使用信号量(mutex + condition_variable + 资源计数)可以实现（对多对，同时多个生产者生产，同时多个消费者消费）生产者-消费者模型 通信
 class Semaphore {
 public:
 	Semaphore(int limit = 0)
@@ -75,7 +78,7 @@ public:
 		std::unique_lock<std::mutex> lock(mtx_);
 		resLimit_++;
 
-		cond_.notify_all(); // 等待状态，释放mutex锁 通知条件变量wait阻塞的地方可以继续执行
+		cond_.notify_all(); // 等待状态 通知条件变量wait阻塞的地方可以继续执行
 	}
 private:
 	int resLimit_;
